@@ -1,0 +1,23 @@
+{
+  "name": "challenge-12",
+  "version": "0.0.1",
+  "description": "test exercises",
+  "main": "exercises.js",
+  "scripts": {
+    "test": "jest",
+    "test-coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigosibrins/challenge-12.git"
+  },
+  "author": "Rodrigo Gonzalez Sibrins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodrigosibrins/challenge-12/issues"
+  },
+  "homepage": "https://github.com/rodrigosibrins/challenge-12#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
