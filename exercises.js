@@ -24,10 +24,13 @@ const division = (dividendo, divisor) => {
 };
 //6
 const tablaMultiplicar = (multiplicando, multiplicador) => {
-  if (multiplicador === undefined) return (multiplicador = 10);
-  for (i = 0; i <= multiplicador; i++)
-    return multiplicando + " x", i + " = ", multiplicando * i;
-};
+  if (multiplicador === undefined) multiplicador = 10;
+  let table = []
+  for (let i = 0; i <= multiplicador; i++){
+    table.push(multiplicando * i)
+  }
+return table
+}
 //7
 const potencia = (base, exponente) => {
   return Math.pow(base, exponente);

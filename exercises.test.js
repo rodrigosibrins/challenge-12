@@ -25,11 +25,11 @@ test("divide 8 by 2 to equal 4", () => {
 });
 
 test("if multiplicador is undefined then multiplicador is equal to 10", () => {
-  expect(exercises.tablaMultiplicar(2)).toBe(10);
+  expect(exercises.tablaMultiplicar(2)).toEqual([0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]);
 });
 
-test("table of 2", () => {
-  expect(exercises.tablaMultiplicar(2, 4)).toBe(0);
+test("multiplicando is 2 and multiplicador 4", () => {
+  expect(exercises.tablaMultiplicar(2, 4)).toEqual([0, 2, 4, 6, 8]);
 });
 
 test("2 cubed to equal 8", () => {
