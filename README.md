@@ -1,6 +1,6 @@
 # Challenge 12
 
-**Server**
+**Jest Exercises**
 
 Solution to the challenge number 12.
 
