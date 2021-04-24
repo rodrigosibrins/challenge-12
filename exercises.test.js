@@ -49,3 +49,4 @@ test("2^2 + 4^4 to be 20", () => {
 test("2 to have three 0 to the left", () => {
   expect(exercises.cerosIzq(2, 4)).toBe("0002");
 });
+
