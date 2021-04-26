@@ -38,7 +38,7 @@ describe("Multiply function", () => {
 
 describe("Division function", () => {
   test("Can not divide by 0", () => {
-    expect(exercises.division(8, 0)).toBe("No se puede dividir por 0");
+    expect(exercises.division(8, 0)).toMatch("No se puede dividir por 0");
   });
   test("Divide 8 by 2 to equal 4", () => {
     expect(exercises.division(8, 2)).toBe(4);
@@ -54,6 +54,9 @@ describe("Multiplication table function", () => {
   });
   test("Multiplicando is 2 and multiplicador 4", () => {
     expect(exercises.tablaMultiplicar(2, 4)).toEqual([0, 2, 4, 6, 8]);
+  });
+  test("The length of the array is correct", () => {
+    expect(exercises.tablaMultiplicar(2, 3)).toHaveLength(4);
   });
 });
 
