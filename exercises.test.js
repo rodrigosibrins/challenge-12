@@ -19,22 +19,26 @@ test("multiply 2 x 4 to equal 8", () => {
   expect(exercises.multiplicacion(2, 4)).not.toBe("8");
 });
 
-test("can not divide by 0", () => {
-  expect(exercises.division(8, 0)).toBe("No se puede dividir por 0");
+describe('division function', () => {
+  test("can not divide by 0", () => {
+    expect(exercises.division(8, 0)).toBe("No se puede dividir por 0");
+  });
+
+  test("divide 8 by 2 to equal 4", () => {
+    expect(exercises.division(8, 2)).toBe(4);
+    expect(exercises.division(8, 2)).not.toBe("4");
+  });
 });
 
-test("divide 8 by 2 to equal 4", () => {
-  expect(exercises.division(8, 2)).toBe(4);
-  expect(exercises.division(8, 2)).not.toBe("4");
-});
+describe('multiplication table function', () => {
+  test("if multiplicador is undefined then multiplicador is equal to 10", () => {
+    expect(exercises.tablaMultiplicar(2)).toEqual([0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]);
+  });
 
-test("if multiplicador is undefined then multiplicador is equal to 10", () => {
-  expect(exercises.tablaMultiplicar(2)).toEqual([0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]);
-});
-
-test("multiplicando is 2 and multiplicador 4", () => {
-  expect(exercises.tablaMultiplicar(2, 4)).toEqual([0, 2, 4, 6, 8]);
-});
+  test("multiplicando is 2 and multiplicador 4", () => {
+    expect(exercises.tablaMultiplicar(2, 4)).toEqual([0, 2, 4, 6, 8]);
+  });
+})
 
 test("2 cubed to equal 8", () => {
   expect(exercises.potencia(2, 3)).toBe(8);
